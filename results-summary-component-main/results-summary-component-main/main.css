@@ -1,0 +1,199 @@
+.centering  {
+    display: grid;
+    place-items: center;
+}
+
+.main {
+    width: 100vw;
+    height: 98vh;
+    margin: 0 0 0 0;
+    font-family: "Hanken+Grotesk";
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0%;
+}
+
+.container {
+    height:inherit;
+    width: inherit;
+}
+
+.item1 {
+    height: 45%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 0 0;
+    border-radius: 0 0 30px 30px;
+}
+
+.item1_texto {
+    height: 40%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item1_texto h1 {
+    margin: 0;
+}
+
+.item1_texto p {
+    width: 70%;
+    margin: 0;
+}
+
+.circulo {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 40%;
+    width: 35%;
+    border-radius: 100%;
+    margin: 0;
+}
+
+.item2 {
+    display: flex;
+    height: 55%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item2_titulo {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item2_titulo p {
+    width: 80%;
+    font-size: 18px;
+}
+
+.item2_disenio {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 18%;
+    background-color: azure;
+    border-radius: 10px;
+}
+
+.card_body {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    margin: 0 0 0 10px;
+}
+
+.card_body img {
+    width: 50%;
+    height: 50%;
+}
+
+.card_value {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    margin: 0 0 0 5%;
+}
+
+.card_value p {
+    margin: 0 0 0 0;
+}
+
+.boton {
+    width: 80%;
+    height: 13%;
+    background-color: hsl(224, 30%, 27%);
+    display: grid;
+    place-items: center;
+    margin: 2% 0 0 0;
+    border-radius: 20px;
+}
+
+.boton:hover {
+    background-color: hsl(241, 81%, 54%);
+    transition: 0.5s;
+}
+
+
+@media screen and (min-device-width: 649px){
+    .container {
+        min-height: 260;
+        max-height: 350px;
+        height: 95vh;
+        width: 650px;
+        display: flex;
+        box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+    }
+
+    .item1 {
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 0 0 0;
+        border-radius: 30px;
+    }
+
+    .circulo {
+        background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        height: 40%;
+        width: 40%;
+        border-radius: 100%;
+        margin: 0;
+    }
+
+    .circulo h1 {
+        font-size: 50px;
+        margin: 25px 0 0 0;
+    }
+
+    .circulo p {
+        margin: 0;
+    }
+
+    .item1_texto h1 {
+        margin: 10px 0 0 0;
+    }
+    .item1_texto p {
+        width: 62%;
+        margin: 0;
+    }
+
+    .item2 {
+        display: flex;
+        height: 100%;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
