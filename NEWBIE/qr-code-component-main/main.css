@@ -1,0 +1,83 @@
+.main {
+    height: 97vh;
+    width: 97vw;
+    display: grid;
+    place-items: center;
+    font-family: "Outfit";
+    background-color: hsl(212, 45%, 89%);
+}
+
+.card {
+    min-height: 350px;
+    max-height: 450px;
+    height: 85vh;
+    width: 300px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.card_item1 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_item1_img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.card_item2 {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.card_item2 h4 {
+    width: 80%;
+    margin: 0;
+    margin: 2%;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.card_item2 p {
+    width: 85%;
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+    margin: 0;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (min-device-height: 450px){
+
+    .card_item1 {
+        width: 100%;
+        height: 66.6%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card_item2 {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
