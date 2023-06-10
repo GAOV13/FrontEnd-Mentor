@@ -1,0 +1,162 @@
+.centering {
+    display: grid;
+    place-items: center;
+}
+
+.centering1 {
+    display: grid;
+    place-items: center;
+}
+
+.primera_parte {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp1 {
+    width: 92%;
+    margin: 5%;
+}
+
+.grid_container {
+    height: 100vh;
+    font-family: "Overpass";
+}
+
+.container {
+    background-color: hsl(213, 19%, 18%);
+    height: 335px;
+    width: 335px;
+    border-radius: 20px;
+}
+
+.orientacion {
+    width: inherit;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orientacion h2 {
+    width: 92%;
+    margin: 2%;
+}
+
+.orientacion p {
+    width: 92%;
+    margin: 0%;
+    line-height: 140%;
+}
+
+.no_visible {
+    display: none;
+}
+
+.button_container {
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.inactive {
+    background-color:hsl(213, 19%, 22%);
+    color: hsl(216, 12%, 54%);
+    cursor: pointer;
+} 
+
+.active {
+    background-color:hsl(216, 12%, 54%);
+    color: white;
+    cursor: pointer;
+}
+
+.inactive:hover {
+    background-color:hsl(25, 97%, 53%);
+    color: white;
+    transition: 0.5s;
+} 
+
+.active:hover {
+    background-color:hsl(25, 97%, 53%);
+    color: white;
+    transition: 0.5s;
+}
+
+.select {
+    width: inherit;
+    height: 25%;
+}
+
+.select p {
+    position: absolute;
+    background-color: hsl(25, 97%, 53%);
+    text-align: center;
+    padding: 10px 110px 10px 110px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.select p:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transition: 0.5s;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0%;
+}
+
+.thanks_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks_item1 {
+    height: 40%;
+}
+
+.thanks_item1 img {
+    padding: 25px 0 0 0;
+}
+
+.thanks_item2 { 
+    height: 20%;
+}
+
+.thanks_item2 p {
+    background-color: hsl(213, 19%, 22%);
+    color: hsl(25, 97%, 53%);
+    padding: 5px 10px 2px 10px;
+    border-radius: 15px;
+    margin: 5% 0 0 0;
+}
+
+.thanks_item3 {
+    height: 40%;
+}
+
+.thanks_item3 h2 {
+    margin: 0%;
+}
+
+.thanks_item3 p {
+    margin: 2% 0 0 0;
+    justify-content: center;
+    text-align: center;
+    width: 92%;
+    font-size: 15px;
+}
