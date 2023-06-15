@@ -108,7 +108,13 @@
     width: 20%;
 }
 
+.boton:hover button{
+    transition: 0.5s;
+    background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 80%, 86%));
+}
+
 .boton button {
+    cursor: pointer;
     height: 100%;
     width: 100%;
     border: none;
