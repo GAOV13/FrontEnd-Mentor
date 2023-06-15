@@ -1,0 +1,224 @@
+.main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100wh;
+    position: relative;
+    background-image: url("images/bg-pattern-desktop.svg");
+    margin: 0%;
+    font-family: "Josefin Sans";
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: 5%;
+    height: 30%;
+    width: 25%;
+}
+
+
+
+.container {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.titulo {
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: normal;
+    margin-top: 15%;
+}
+
+.titulo p {
+    margin: 0%;
+}
+
+.texto {
+    margin: 0%;
+    width: 85%;
+    font-size: 15px;
+    line-height: 140%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    color: hsl(0, 36%, 70%);
+}
+
+.caja_correo {
+    position: relative;
+    width: 80%;
+    height: 10%;
+    border: 1px solid  hsl(0, 36%, 70%);
+    border-radius: 25px;
+    margin-bottom: 10%;
+}
+
+.not_visible {
+    display: none;
+}
+
+.caja_correo p {
+    position: absolute;
+    bottom: -70%;
+    left: 5%;
+    font-size: 13px;
+    color: hsl(0, 93%, 68%);
+}
+
+.caja_correo_error {
+    position: absolute;
+    right: 20%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: hsl(0, 93%, 68%);
+}
+
+.box_email {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 5%;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.boton {
+    position: absolute;
+    right: -2%;
+    top: -2%;
+    height: 101%;
+    width: 20%;
+}
+
+.boton button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.imagen {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 10%;
+    margin: 0%;
+}
+
+.imagen picture {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 550px) {
+    .imagen {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        right: 0%;
+        top: 0%;
+        margin: 0%;
+    }
+
+    .logo {
+        position: absolute;
+        width: 60%;
+        height: 20%;
+        top: 0%;
+        left: 0%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        margin-left: 15%;
+        height: 30%;
+        width: 25%;
+    }
+
+    .container {
+        bottom: 0%;
+        left: 0%;
+        width: 60%;
+        height: 80%;
+        text-align: left;
+        align-content: left;
+        align-items:flex-start;
+        flex-wrap: nowrap;
+        justify-content:flex-start;
+    }
+
+    .titulo {
+        font-size: 60px;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+
+    .texto {
+        margin: 0%;
+        width: 60%;
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-bottom: 0%;
+    }
+
+    .caja_correo {
+        width: 60%;
+        height: 7%;
+        margin-bottom: 0%;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .titulo {
+        font-size: 30px;
+        margin-top: 7%;
+    }
+
+    .texto {
+        font-size: 10px;
+    }
+
+    .caja_correo p {
+        position: absolute;
+        bottom: -135%;
+        left: 5%;
+        font-size: 13px;
+        color: hsl(0, 93%, 68%);
+    }
+
+    .caja_correo_error img {
+        height: 80%;
+    }
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
