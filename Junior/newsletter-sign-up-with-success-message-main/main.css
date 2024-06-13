@@ -1,0 +1,12 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0%;
+}
