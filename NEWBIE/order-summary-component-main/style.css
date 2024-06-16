@@ -1,0 +1,109 @@
+body {
+    background-image: url('images/pattern-background-desktop.svg');
+    background-size: 100vw 50vh; /* Ajusta el tamaño de la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: top; /* Centra la imagen de fondo */
+    background-color: hsl(225, 100%, 94%);
+    background-attachment: fixed; /* Hace que la imagen de fondo se quede estática */
+    height: 100vh; /* Altura para mostrar el efecto de scroll */
+    width: 100vw;
+    max-height:max-content;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 360px;
+    height: 80vh;
+    min-height: 500px;
+    max-height: 600px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.card-background{
+    width: inherit;
+    border-radius: 20px 20px 0px 0px;
+    width: inherit;
+    height: 30%;
+}
+
+.container-info {
+    display: grid;
+    width: inherit;
+    place-items: center;
+    top: 0;
+
+}
+
+.title {
+    color: hsl(223, 47%, 23%);
+}
+
+.information {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.plan-info{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+    align-items: center;
+    border-radius: 10px;
+    height: 70%;
+}
+
+.plan-info-img {
+    height: 50%;
+    width: 15%;
+}
+
+.plan-info p {
+    justify-content: left;
+}
+.plan-info-price {
+    line-height: 5%;
+}
+
+.card-payment {
+    background-color:  hsl(245, 75%, 52%);
+    padding: 10px 62px;
+    border-radius: 10px;
+    color: hsl(225, 100%, 98%);
+    cursor: pointer;
+}
+
+.card-payment:hover {
+    background-color: hsl(225, 100%, 80%);
+    transition: 0.5s;
+}
+
+.cancel-order {
+    color: hsl(224, 23%, 55%); 
+    cursor: pointer;
+}
+
+.cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+    transition: 0.5s;
+}
+
+footer {
+    width: inherit;
+    bottom: 0;
+    text-align: center;
+}
