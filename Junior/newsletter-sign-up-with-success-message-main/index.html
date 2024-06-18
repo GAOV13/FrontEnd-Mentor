@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
-  <script src="myscript.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
@@ -16,40 +16,57 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body name="main">
-  <div name="container">
-      <!-- Sign-up form start -->
+<body>
+  <div class="card container">
+      <div class="card-info">
+        <h1 style="font-size: clamp(1rem, 4vw, 10rem); margin-top: 12%; margin-left: 10%;">Stay updated!</h1>
 
-      Stay updated!
-
-      Join 60,000+ product managers receiving monthly updates on:
-
-      Product discovery and building what matters
-      Measuring to ensure updates are a success
-      And much more!
-
-      Email address
-      email@company.com
-
-      Subscribe to monthly newsletter
-
+        <p style="font-size: clamp(0.8rem, 0.5vw, 4rem); margin-left: 10%;">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+  
+        <ul style="margin-left: 10%;">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+  
+        <div class="correo-info" style="margin-left: 10%;">
+          <div class="correo-titulos" >
+            <h6 style="position: absolute; left: 0;">Email address</h6>
+            <h6 class="error-message" style="position: absolute; right: 0;">Validate email required</h6>
+          </div>
+          
+          <form id="myForm" class=caja_correo>
+            <input class="box_email" type="email" name="correo" id="correo" placeholder="email@company.com" value="">
+            <button type="submit" value="send" class="box_buton">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="card-imagen">
+        <img class="imagen-tam" src="assets/images/illustration-sign-up-desktop.svg" alt="imagen">
+      </div>
     <!-- Sign-up form end -->
   </div>
 
   <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
+  <div class="container message no-visible"">
+    <img style="margin-left: 10%; margin-top: 10%; margin-bottom: 0;" 
+         src="assets/images/icon-success.svg" alt="logo"
+         height="10%"> 
+    <h1 style="margin-left: 10%; margin-top: 0;">Thanks for subscribing!</h1>
+    <p  style="margin-left: 10%; margin-right: 10%; font-size: 10px;" 
+        id="my_text"></p>
+    <p class="confirm-button">  Dismiss message</p>
+  </div>
   <!-- Success message end -->
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/GAOV13/FrontEnd-Mentor/tree/master/Junior/newsletter-sign-up-with-success-message-main">Guido Salazar</a>.
+  </footer>
 </body>
+
+<script src="myscript.js"></script>
 </html>
