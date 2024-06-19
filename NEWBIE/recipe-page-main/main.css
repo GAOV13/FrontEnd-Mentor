@@ -133,13 +133,11 @@ main {
         display: grid;
         place-content: center;
         overflow: hidden;
-        height: 320vh;
     }
 
     .container {
       width: 650px;
-      margin-top: 10%;
-      height: 290vh;
+      margin-top: 15%;
       border-radius: 20px;
     }
 
