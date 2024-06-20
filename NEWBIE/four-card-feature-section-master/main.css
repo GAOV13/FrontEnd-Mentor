@@ -1,0 +1,116 @@
+:root {
+    /* Color */
+
+    /* Primary */
+    --c-red: hsl(0, 78%, 62%);
+    --c-cyan: hsl(180, 62%, 55%);
+    --c-orange: hsl(34, 97%, 64%);
+    --c-blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+    --c-very-dark-blue: hsl(234, 12%, 34%);
+    --c-grayish-blue: hsl(229, 6%, 66%);
+    --c-very-light-gray: hsl(0, 0%, 98%);
+    --c-white: white;
+
+    /* Fonts */
+    /* Fonts-size */
+    --f-size: 16px;
+    /* Fonts-family */
+    --f-family: 'Poppins', sans-serif;
+
+    /* Fonts-weights */
+    --f-weight-l: 200;
+    --f-weight-m: 400;
+    --f-weight-h: 600;
+}
+
+body, html {
+    font-family: var(--f-family);
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container{
+    width: inherit;
+}
+
+.title {
+    color: var(--c-very-dark-blue);
+    font-weight: var(--f-weight-h);
+}
+
+.content {
+    color: var(--c-grayish-blue);
+    font-weight: var(--f-weight-m);
+}
+
+.main-container {
+    margin-top: 15%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-bottom: 15%;
+    line-height: 10px;
+}
+
+.main-subtitle {
+    color: var(--c-grayish-blue);
+    font-weight: var(--f-weight-l);
+    font-size: clamp(1rem, 6.85vw, 2rem);
+    text-align: center;
+}
+
+.main-title {
+    font-size: clamp(1rem, 7.0vw, 2rem);
+    text-align: center;
+}
+
+.main-content {
+    line-height:normal;
+    text-align: center;
+    font-size: clamp(1rem, 1.0vw, 2rem);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    place-items: center;
+}
+
+.card {
+    margin-bottom: 20px;
+    background-color: var(--c-white);
+    border-radius: 10px;
+    padding-top: 1rem;
+    width: clamp(100px, 100%, 350px);
+    height: clamp(200px, 15vh,400px);
+    box-shadow: 0px 5px 10px var(--c-very-dark-blue);
+    position: relative;
+}
+
+.card-title {
+    font-size: clamp(1rem, 5vw, 2rem);
+    margin-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.card-content {
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: clamp(0.7rem, 0.8vw, 2rem);
+}
+
+.card img{
+    position: absolute;
+    height: 3.5rem;
+    width:  3.5rem;
+    right: 12%;
+    bottom: 12%;
+}
+
