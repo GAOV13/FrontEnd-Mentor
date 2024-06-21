@@ -6,7 +6,6 @@
 
     .container {
         height: clamp(500px, 80vh, 1024px);
-        width: ;
         width: 90%;
         display: grid;
 
